@@ -61,6 +61,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-three" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/09/21/three/" class="article-date">
+  <time datetime="2016-09-21T13:57:29.000Z" itemprop="datePublished">2016-09-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/21/three/">第三篇</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h3><p>今天整理一点关于登录注册方面的东西。<br>下次我们讲讲HTTPS与http之间的区别,还有内存泄漏和内存溢出。</p>
+<h3 id="关于登录注册"><a href="#关于登录注册" class="headerlink" title="关于登录注册"></a>关于登录注册</h3><p>测试登录注意点：1.登录时输入错误密码次数过多时，可能锁定账号或者出现验证码验证登录。<br>2.其次就是技术方面的防sql注入。<br>3.然后就是一些等价类，和边界值，如注册时最短长度和最大长度，小于最短长度和大于最大长度。<br>4.注册时，特殊字符的输入<br>5.注册时，确认密码与密码不一致<br>6.注册时，邮箱的格式<br>7.注册已存在的用户名<br>8.回车键是否能代替确认<br>9.tab键是否正确响应进行切换按钮<br>10.验证系统是否对已经存在用户的用户名大小写转换时是否做出正确的响应</p>
+<p>登录：1.用户名密码是否对大小写敏感。大写也能正确登录存在。<br>2.验证系统是否对在合法用户名或密码前插入空格敏感<br>3.验证系统是否对在合法用户名或密码后面插入空格敏感<br>4.验证系统是否允许已经禁止的用户名登录<br>5.验证系统是否允许已经删除的用户名登录<br>6.验证系统是否对tab键敏感<br>7.验证系统是否对用户名或者密码中含有全角字符敏感 </p>
+<p>不过现在的技术一般不会出现用防sql注入能登录了。</p>
+<h3 id="抓包"><a href="#抓包" class="headerlink" title="抓包"></a>抓包</h3><p>抓包（packet capture）<br>就是将网络传输发送与接收的数据包进行截获、重发、编辑、转存等操作，也用来检查网络安全。抓包也经常被用来进行数据截取等</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/09/21/three/" data-id="citczwm520001c50chwm8rlht" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-two" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/09/03/two/" class="article-date">
@@ -91,7 +132,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/09/03/two/" data-id="cismkqjh20002qv0cvum812bw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/09/03/two/" data-id="citczwm550002c50ceuy2dfaz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -129,52 +170,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/28/one/" data-id="cismkqjgv0000qv0c36pmpur8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/26/hello-world/" class="article-date">
-  <time datetime="2016-08-26T14:43:43.000Z" itemprop="datePublished">2016-08-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/26/hello-world/">Hello World1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/26/hello-world/" data-id="cismkqjh00001qv0cmrmyxg1n" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/28/one/" data-id="citczwm4y0000c50car6gbblc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -214,15 +210,15 @@
       <ul>
         
           <li>
+            <a href="/2016/09/21/three/">第三篇</a>
+          </li>
+        
+          <li>
             <a href="/2016/09/03/two/">第二篇</a>
           </li>
         
           <li>
             <a href="/2016/08/28/one/">第一篇</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/26/hello-world/">Hello World1</a>
           </li>
         
       </ul>
